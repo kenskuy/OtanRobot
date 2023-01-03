@@ -6,7 +6,7 @@
          "advance",
          "group",
          "manager",
-         "emikorobot"
+         "otanrobot"
       ],
     
    "logo":    "https://telegra.ph/file/84406e4ebefbab4aad1a1.jpg",  
@@ -46,7 +46,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "2088106582"
+         "value": "5658910455"
      },
       "STRING_SESSION": {
          "description": "Fill with telethon string session.",
