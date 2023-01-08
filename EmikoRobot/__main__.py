@@ -90,6 +90,7 @@ PM_START_TEXT = """
 ────────────────────────
 ✪ Ketik aja tuh tombol kan bisa baca lu pada.
 ✪ powered by @SipalingOTAN
+✪ Sedekah /donasi
 """
 
 buttons = [
@@ -771,7 +772,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Yo, Mek Idup lagi nich.",
+                "👋 𝗬𝗢, 𝗠𝗘𝗞 𝗜𝗗𝗨𝗣 𝗟𝗔𝗚𝗜 𝗡𝗜𝗖𝗛.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
