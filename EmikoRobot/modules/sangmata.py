@@ -22,7 +22,7 @@ async def lastname(steal):
     if message.sender.bot:
         await puki.edit("```Reply To Real User's Message.```")
         return
-    await puki.edit("```𝗧𝗨𝗡𝗚𝗚𝗨 𝗠𝗘𝗠𝗘𝗞😑...```")
+    await puki.edit("```Please wait...```")
     try:
         async with ubot.conversation(chat) as conv:
             try:
@@ -31,7 +31,7 @@ async def lastname(steal):
                 response = await conv.get_response()
             except YouBlockedUserError:
                 await steal.reply(
-                    "```Error, report to @havingsexid```"
+                    "```Error, report to @kenbotsupport```"
                 )
                 return
             if r.text.startswith("Name"):
