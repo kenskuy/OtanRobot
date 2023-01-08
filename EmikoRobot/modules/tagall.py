@@ -100,13 +100,13 @@ async def cancel_spam(event):
     if not is_admin:
         return await event.reply("__Only admins can execute this command!__")
     if not event.chat_id in spam_chats:
-        return await event.reply("__Nggk ada yang ngetagall bodo😑...__")
+        return await event.reply("__𝗡𝗚𝗚𝗞 𝗔𝗗𝗔 𝗬𝗔𝗡𝗚 𝗡𝗚𝗘𝗧𝗔𝗚𝗔𝗟𝗟 𝗕𝗢𝗗𝗢😑...__")
     else:
         try:
             spam_chats.remove(event.chat_id)
         except:
             pass
-        return await event.respond("__Dah Berenti noh🙃.__")
+        return await event.respond("__𝗨𝗗𝗔𝗛 𝗕𝗘𝗥𝗘𝗡𝗧𝗜 𝗜𝗧𝗨 𝗠𝗘𝗞🙃.__")
 
 
 __mod_name__ = "Tag all"
