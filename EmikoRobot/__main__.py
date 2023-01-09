@@ -89,8 +89,7 @@ PM_START_TEXT = """
 × `{}` *users, across* `{}` *chats.*
 ────────────────────────
 ✪ Ketik aja tuh tombol kan bisa baca lu pada.
-✪ powered by @SipalingOTAN
-✪ Sedekah /donasi
+✪ powered by @OtanCabul 🐒
 """
 
 buttons = [
@@ -105,7 +104,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+            text="🐒 Tambahkan Jadi Keluargamu 🐒", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
