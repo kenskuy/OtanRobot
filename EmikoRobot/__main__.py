@@ -85,27 +85,28 @@ PM_START_TEXT = """
 *Yoo mek {} !*
 ✪ Ini bot untuk manage ama musikan di grup lu pada [✨](https://telegra.ph/file/84406e4ebefbab4aad1a1.jpg)
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
+🐒 *Uptime:* `{}`
+🐒 `{}` *users, across* `{}` *chats.*
 ────────────────────────
 ✪ Ketik aja tuh tombol kan bisa baca lu pada.
-✪ powered by @OtanCabul 🐒
+✪ powered by @OtanCabul
+✪ Bantuan /Help
 """
 
 buttons = [
     [
+        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+    ],
+    [
+        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="Try inline!​​", switch_inline_query_current_chat=""
+        ),
+    ],
+    [
         InlineKeyboardButton(
             text="🐒 Tambahkan Jadi Keluargamu 🐒", url=f"t.me/{bu}?startgroup=new"),
     ],
-    [
-        InlineKeyboardButton(text="Get Help🛠", callback_data="help_back"),
-        InlineKeyboardButton(text="Get music📀", callback_data="/mhelp"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Donasi", callback_data="t.me/OtanCabul"),
-        InlineKeyboardButton(text="get Gado-Gado", callback_data="emiko_"),
-        ),
-    ]
 ]
 
 
@@ -114,7 +115,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @OtanCabul \
+ You can support the project by contacting @SipalingOTAN \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
