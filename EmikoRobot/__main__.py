@@ -94,18 +94,18 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
-        InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
-    ],
-    [
         InlineKeyboardButton(
             text="🐒 Tambahkan Jadi Keluargamu 🐒", url=f"t.me/{bu}?startgroup=new"),
     ],
+    [
+        InlineKeyboardButton(text="Get Help🛠", callback_data="help_back"),
+        InlineKeyboardButton(text="Get music📀", callback_data="/mhelp"),
+    ],
+    [
+        InlineKeyboardButton(text="Get Donasi", callback_data="t.me/OtanCabul"),
+        InlineKeyboardButton(text="get Gado-Gado", callback_data="emiko_"),
+        ),
+    ]
 ]
 
 
@@ -114,7 +114,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @SipalingOTAN \
+ You can support the project by contacting @OtanCabul \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
