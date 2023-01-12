@@ -89,23 +89,23 @@ PM_START_TEXT = """
 🐒 `{}` *users, across* `{}` *chats.*
 ────────────────────────
 ✪ Ketik aja tuh tombol kan bisa baca lu pada.
-✪ powered by @OtanCabul
-✪ Bantuan /Help
+✪ powered by @OtanCabul 🐒
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
+        InlineKeyboardButton(
+            text="🐒 Tambahakan Jadi Keluargamu 🐒", url=f"t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Help Manage🛠", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+                    text=_["musik📀"], callback_data=f"/mhelp"
+                ),
         ),
     ],
     [
-        InlineKeyboardButton(
-            text="🐒 Tambahkan Jadi Keluargamu 🐒", url=f"t.me/{bu}?startgroup=new"),
+        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
     ],
 ]
 
